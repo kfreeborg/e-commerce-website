@@ -24,5 +24,19 @@
     "express": "^4.17.1",
     "mysql2": "^2.1.0",
     "sequelize": "^5.21.7"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "eqeqeq": "error",
+      "no-console": "warn",
+      "no-debugger": "warn",
+      "no-var": "error",
+      "prefer-const": "error"
+    }
   }
 }
