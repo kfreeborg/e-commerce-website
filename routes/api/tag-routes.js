@@ -15,13 +15,27 @@ router.get('/', async (req, res) => {
   res.json(tag);
 });
 
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   // find a single tag by its `id`
-  // be sure to include its associated Product data
+  const tag = await Tag.findOne({
+    // be sure to include its associated Product data
+    where: {
+      id: req.params.id,
+    },
+    include: {
+      model: Product,
+      attributes: ['product_name', 'price', 'stock', 'category_id'],
+    },
+  });
+  res.json(tag);
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   // create a new tag
+  const tag = await Tag.create({
+    tag_name: req.body.tag_name,
+  });
+  res.json(tag);
 });
 
 router.put('/:id', (req, res) => {
