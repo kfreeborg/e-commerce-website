@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/badge/License-TheUnlicense-blue.svg)
 
-![Snapshot of project running on insomnia](/assets/images/Capture.jpg)
+![Snapshot of project running on insomnia](./assets/images/Capture.jpg)
 
 [See a short demonstration video here!](https://drive.google.com/file/d/1bky63nqZhDUbGbVZUlrtmigcBJLTf6k1/view?usp=sharing)
 
